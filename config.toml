@@ -1,4 +1,4 @@
-baseurl = "https://marco-paga.eu"
+baseurl = "https://marcopaga.github.io"
 title = "Marco Paga"
 
 theme = "coder-portfolio"
