@@ -1,0 +1,96 @@
+baseurl = "https://marco-paga.eu"
+title = "Marco Paga"
+
+theme = "coder-portfolio"
+
+DefaultContentLanguage = "en"
+
+paginate = 20
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pygmentsUseClasses = true
+
+disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "Marco Paga"
+    description = "Personal website"
+    keywords = "personal"
+    info = "Solution Architect, Senior IT Consultant"
+    avatarurl = "images/marco_paga.png"
+    footercontent = "Enter a text here."
+    #fixedbarContent = "Feel free to share →"
+    #fixedbarContentAfter = "Thank You! Please share it if you like it→"
+
+    hideCredits = false
+    hideCopyright = false
+
+    # Bottom sns share
+    snsShare = true
+    # Popular sns share
+    # if you want add sns. please message!
+    enableTwitterShare = true
+    enableFacebookShare = false
+    enableHatenaShare = false
+    enableLineShare = false
+    enableLinkedInShare = true
+
+    thumbnail = "images/tn.png"
+
+    # Custom CSS
+    custom_css = []
+
+    # Alignment of Mobile Menu items
+    itemscentered = true
+
+    # RTL support
+    rtl = false
+
+    langseparator = "|"
+
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/marcopaga/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    weight = 2
+    url = "https://twitter.com/m_p_dus/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 3
+    url = "https://www.linkedin.com/in/marco-paga-1925b2b1/"
+[[params.social]]
+    name = "Xing"
+    weight = 4
+    url = "https://www.xing.com/profile/Marco_Paga"
+
+[languages]
+    [languages.en]
+        languagecode = "en"
+        languagename = "English" # The language name to be displayed in the selector.
+        title = "Marco Paga"
+
+        # You can configure the theme parameter for each language.
+        [languages.en.params]
+            author = "Marco Paga"
+            info = "Solution Architect | Senior IT Consultant"
+            description = "Personal website"
+            keywords = "blog,developer,personal"
+
+        [languages.en.menu] # It is possible to change the menu too.
+
+            [[languages.en.menu.main]]
+                name = "About"
+                weight = 1.0
+                url = "index.html"
+
+            [[languages.en.menu.main]]
+                name = "Articles"
+                weight = 2.0
+                url = "articles"

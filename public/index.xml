@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marco Paga</title>
+    <link>https://marco-paga.eu/</link>
+    <description>Recent content on Marco Paga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://marco-paga.eu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Articles</title>
+      <link>https://marco-paga.eu/articles/</link>
+      <pubDate>Sun, 06 Feb 2022 14:58:16 +0100</pubDate>
+      
+      <guid>https://marco-paga.eu/articles/</guid>
+      <description>04.03.2022 Tekton Triggers in der Praxis
+Tekton Triggers in practice
+11.02.2022 Tekton Buildpack Pipeline: Alles schon da?
+Standing on the shoulders of the Tekton community: Tekton buildpack pipeline
+19.01.2022 Tekton Cloud-native CI/CD – a pragmatic intro
+Tekton Cloud-Native CI/CD: Ein pragmatisches Intro
+01.2022 Artikel im Softwerker 19
+2019 Let&amp;rsquo;s encrypt wildcard TLS certificates on Azure Kubernetes Service (AKS)
+2017 Traefik – The modern reverse proxy
+2007 JavaMagazin 03/2007: &amp;ldquo;Eine Einführung in RFID&amp;rdquo;</description>
+    </item>
+    
+  </channel>
+</rss>
