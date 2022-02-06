@@ -12,7 +12,7 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 pygmentsUseClasses = true
 
-disqusShortname = "yourdiscussshortname"
+#disqusShortname = "yourdiscussshortname"
 
 [params]
     author = "Marco Paga"
@@ -20,12 +20,12 @@ disqusShortname = "yourdiscussshortname"
     keywords = "personal"
     info = "Solution Architect, Senior IT Consultant"
     avatarurl = "images/marco_paga.png"
-    footercontent = "Enter a text here."
+    footercontent = "✌️"
     #fixedbarContent = "Feel free to share →"
     #fixedbarContentAfter = "Thank You! Please share it if you like it→"
 
     hideCredits = false
-    hideCopyright = false
+    hideCopyright = true
 
     # Bottom sns share
     snsShare = true
