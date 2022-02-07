@@ -94,3 +94,8 @@ pygmentsUseClasses = true
                 name = "Articles"
                 weight = 2.0
                 url = "articles"
+
+            [[languages.en.menu.main]]
+                name = "Imprint"
+                weight = 2.0
+                url = "impressum"
