@@ -14,6 +14,10 @@ date: 2022-02-06T14:58:16+01:00
 
 [TEKTON TRIGGERS CEL or how to convert a git ref to a branch name](/entries/tekton-triggers-cel/)
 
+## 15.02.2022
+
+[Github Actions test a full Tekton CI installation](/entries/github-actions-testen-tekton-ci/)
+
 ## 11.02.2022
 
 [Tekton Buildpack Pipeline: Alles schon da?](https://blog.codecentric.de/2022/02/alles-schon-da-tekton-buildpack-pipeline/)
