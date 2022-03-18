@@ -7,15 +7,15 @@ In software development, it is good practice to write tests for the productive c
 But CI - systems, although they make the safety net possible for whole teams in the first place, are often far from the principle. Build and test configurations are all too often developed and used without a net and a double bottom.
 This is where I would like to start and take the proven principle even further. The article describes the setup of a tested CI system using the example of Tekton with GitHub Actions.
 
-The article refers to a Tekton - Demo project on GitHub, where[^1] the practical implementation has been done. We will go step by step through all the building blocks and clarify the relationships, because at first glance the used "best of breed" tooling of K3d, Flux and Github Actions can be a bit confusing.
+The article refers to a Tekton - Demo project on GitHub, [where](https://github.com/marcopaga/tekton-demo) the practical implementation has been done. We will go step by step through all the building blocks and clarify the relationships, because at first glance the used "best of breed" tooling of K3d, Flux and Github Actions can be a bit confusing.
 The project is aligned with modern requirements in terms of bootstrapping and testability. Specifically, it means that this project can be easily built and launched on a local development environment and thus just as well in a CI system.
 
 ## Tekton Cloud Native CI/CD
-According to its own homepage, Tekton is a framework for building cloud native CI / CD systems and one goal is to standardize the tooling for CI / CD systems. It has already found its way into Jenkins X and is the basis for RedHat OpenShift Pipelines[^2].
+According to its own homepage, Tekton is a framework for building cloud native CI / CD systems and one goal is to standardize the tooling for CI / CD systems. It has already found its way into Jenkins X and is the basis for [RedHat OpenShift Pipelines](https://cloud.redhat.com/learn/topics/ci-cd).
 The Tekton project uses Kubernetes as a platform and represents the core of the building blocks of a CI pipeline in the form of CRDs. A Custom Resource Definition (CRD) is a self-created Kubernetes object that can be used to make custom objects visible and usable within the Kubernetes API.
 In Tekton, for example, objects such as a "pipeline" can be found, which represents this and can be configured by "tasks", which execute the individual process steps.
 The entire configuration then takes place via manifests, as is usual with Kubernetes. The existing Kubernetes know-how comes into its own here, because in addition to configuration, introspection of the processes can also take place via this path.
-The Tekton Hub[^3] is offered as a central point of contact for tasks and pipelines maintained by the community. Many building blocks can already be found there to cover the most common steps. In addition to the public hub, it is very easy to implement specific solutions once within your own organization and distribute them reliably.
+The [Tekton Hub](https://hub.tekton.dev/) is offered as a central point of contact for tasks and pipelines maintained by the community. Many building blocks can already be found there to cover the most common steps. In addition to the public hub, it is very easy to implement specific solutions once within your own organization and distribute them reliably.
 In addition to the manifests, Tekton of course also provides the Kubernetes operators that execute the configured steps. As is usual with modern CI systems, the build steps are executed within containers.
 
 ## A boiled down CI Pipeline 
@@ -91,7 +91,7 @@ After this maximum timeout has expired, we can then query the state of the pipel
 
 In summary, it is important to know for the rest of the process that the status of the execution can be retrieved via the Kubernetes API. To create a stable test setup, it is important to react to status changes with time-outs and perform verifications. 
 
-In addition to direct interaction with `kubectl`, Tekton provides a specialized command line interface (CLI) that interacts directly with the cluster via the currently used Kubernetes context. Many Kubernetes-based tools come with a suitable CLI to work efficiently with the platform. `tkn` is the corresponding go binary which can be run on different platforms without any problems. Installation instructions can be found via the GitHub repository [^4].
+In addition to direct interaction with `kubectl`, Tekton provides a specialized command line interface (CLI) that interacts directly with the cluster via the currently used Kubernetes context. Many Kubernetes-based tools come with a suitable CLI to work efficiently with the platform. `tkn` is the corresponding go binary which can be run on different platforms without any problems. Installation instructions can be found via the [GitHub repository](https://github.com/tektoncd/cli).
 With this CLI it is then easier to retrieve e.g. the tasks and pipelines. Here is a short example:
 	tkn task list --all-namespaces
 	tkn pipeline list --all-namespaces
@@ -102,15 +102,15 @@ The output of all tasks is collected here and displayed in a traceable way.
 
 ## GitHub Actions
 
-GitHub Actions offer the possibility to build CI pipelines with little effort and use them for projects. My colleague Jonas wrote a wonderful blog post on this topic,[^5] which I gladly refer to for more information.
+GitHub Actions offer the possibility to build CI pipelines with little effort and use them for projects. My colleague Jonas wrote a wonderful [blog post on this topic](https://blog.codecentric.de/en/2021/03/github-actions-nextgen-cicd/), which I gladly refer to for more information.
 For this article it is important to know that the Actions also allow containerized execution of test code. Moreover, it is even possible to launch additional containers, which allows us to use a minimal Kubernetes cluster in the form of K3d within the test run.
 In the demo project used, each push runs through the pipeline and the results of the run are visible under the "Actions" tab on the GitHub pages. The configuration is done as usual with other tools by a file, which is stored in the repository under `.github/workflows`. 
 
 ## Demo Project
 The demo project uses Github Actions so that a build is started on every commit and push to the repository. The configuration of the pipeline can be found in `.github/workflows/create-cluster.yml`.
 ![](/images/github-actions-testen-tekton-ci.png)
-Inside the Github action, a k3d [^6]Kubernetes cluster is started. K3d starts a minimal [^7]cluster which is provided by Rancher. Rancher offers with this Kubernetes distribution a minimal cluster which is optimal for CI operation, among other things. It requires very little memory and also the time to start is extremely low. This temporary cluster is used as a deployment target for the Tekton installation.
-After the cluster is available, the further installation starts with Flux[^8] Which is a tool to implement the GitOps approach coined by Weaveworks. The configuration of the target cluster is managed in its entirety in git and is retrieved from there by the respective target cluster. GitOps tools and thus also Flux work pull-based compared to other declarative Infrastructure as Code - tools.
+Inside the Github action, a [k3d](https://k3d.io/) Kubernetes cluster is started. K3d starts a minimal [k3s cluster](https://github.com/k3s-io/k3s) which is provided by Rancher. Rancher offers with this Kubernetes distribution a minimal cluster which is optimal for CI operation, among other things. It requires very little memory and also the time to start is extremely low. This temporary cluster is used as a deployment target for the Tekton installation.
+After the cluster is available, the further installation starts with [Flux](https://fluxcd.io/) Which is a tool to implement the GitOps approach coined by Weaveworks. The configuration of the target cluster is managed in its entirety in git and is retrieved from there by the respective target cluster. GitOps tools and thus also Flux work pull-based compared to other declarative Infrastructure as Code - tools.
 Perhaps the question arises, "Why Flux?" From my point of view, it is a tiny, flexible deployment tool that allows the installation of Helm releases and simple YAML manifests with little effort. Integration into the deployment and testing process is also quick.
 Flux installs the basic components of Tekton and also the desired additional components of the pipelines. Once all the installation steps have been completed, a fully-fledged CI system is available. The installation steps are mapped in the form of `customizations` which thus define the installation sequence of Kubernetes manifests. In this demo project, the Flux installation starts in `clusters/local/` and progresses from there through further references to installation files.
 The process outlined above runs autonomously and asynchronously. How can you tell in the CI - process when the cluster is deployable? Determining this moment reproducibly, as error-free as possible and precisely is very important for testing, because otherwise there are always false positives in the pipeline, which would greatly reduce its acceptance by the using teams.
@@ -133,29 +133,11 @@ Interesting here is that the PipelineRun is generated according to a simple nami
 	          PIPELINE_RUN_NAME=$(kubectl create -n tekton-pipelines -f ./hello-goodbye-pipeline-run.yaml -o json | jq -r '.metadata.name')
 	          kubectl -n tekton-pipelines wait --for=condition=SUCCEEDED=True --timeout=60s pipelineruns.tekton.dev/$PIPELINE_RUN_NAME
 	          tkn pr --namespace tekton-pipelines logs $PIPELINE_RUN_NAME
-The `PipelineRun` shown above is started by the test and the generated name is read from the API with the Swiss Army Knife jq[^9].
+The `PipelineRun` shown above is started by the test and the generated name is read from the API with the Swiss Army Knife [jq](https://stedolan.github.io/jq/).
 Now we just wait for the pipeline to run successfully and report back a success if this is met.
 	kubectl -n tekton-pipelines wait --for=condition=SUCCEEDED=True --timeout=60s pipelineruns.tekton.dev/$PIPELINE_RUN_NAME
 The GitHub Actions - Job is green when the pipeline has been successfully run.
 
 ## Recap
 With the approach described here, we have automated the testing of an entire CI system from the ground up. No more unpleasant surprises when a small change in the pipeline causes unwanted effects or the system has to be rebuilt. The tests are always running and make it possible for us to develop this part of the infrastructure like a product.
-If you have comments or questions feel free to contact me. 
-
-[^1]:	[https://github.com/marcopaga/tekton-demo](https://github.com/marcopaga/tekton-demo)
-
-[^2]:	[https://cloud.redhat.com/learn/topics/ci-cd](https://cloud.redhat.com/learn/topics/ci-cd)
-
-[^3]:	[https://hub.tekton.dev/](https://hub.tekton.dev/)
-
-[^4]:	[https://github.com/tektoncd/cli](https://github.com/tektoncd/cli)
-
-[^5]:	[https://blog.codecentric.de/en/2021/03/github-actions-nextgen-cicd/](https://blog.codecentric.de/en/2021/03/github-actions-nextgen-cicd/)
-
-[^6]:	[https://k3d.io/](https://k3d.io/)
-
-[^7]:	[https://github.com/k3s-io/k3s](https://github.com/k3s-io/k3s)
-
-[^8]:	[https://fluxcd.io/](https://fluxcd.io/)
-
-[^9]:	[https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)
+If you have comments or questions feel free to contact me.
