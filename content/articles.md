@@ -3,6 +3,9 @@ title: "Articles"
 date: 2022-02-06T14:58:16+01:00
 ---
 
+## 29.04.2022
+
+[Github Actions test a full Tekton CI installation](https://blog.codecentric.de/en/2022/04/github-actions-t…-ci-installation/)
 
 ## 04.03.2022
 
