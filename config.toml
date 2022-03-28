@@ -18,7 +18,7 @@ pygmentsUseClasses = true
     author = "Marco Paga"
     description = "Personal website"
     keywords = "personal"
-    info = "Solution Architect, Senior IT Consultant"
+    info = "Eager to learn and improve"
     avatarurl = "images/marco_paga.png"
     footercontent = "✌️"
     #fixedbarContent = "Feel free to share →"
@@ -65,10 +65,6 @@ pygmentsUseClasses = true
     icon = "fab fa-linkedin"
     weight = 3
     url = "https://www.linkedin.com/in/marco-paga-1925b2b1/"
-[[params.social]]
-    name = "Xing"
-    weight = 4
-    url = "https://www.xing.com/profile/Marco_Paga"
 
 [languages]
     [languages.en]
@@ -79,7 +75,7 @@ pygmentsUseClasses = true
         # You can configure the theme parameter for each language.
         [languages.en.params]
             author = "Marco Paga"
-            info = "Solution Architect | Senior IT Consultant"
+            info = "Eager to learn and improve"
             description = "Personal website"
             keywords = "blog,developer,personal"
 
