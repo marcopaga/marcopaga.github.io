@@ -4,6 +4,7 @@ title = "Marco Paga"
 theme = "coder-portfolio"
 
 DefaultContentLanguage = "en"
+translationKey = 'about'
 
 paginate = 20
 
@@ -75,7 +76,7 @@ pygmentsUseClasses = true
         # You can configure the theme parameter for each language.
         [languages.en.params]
             author = "Marco Paga"
-            info = "Eager to learn and improve"
+            info = "Problem solver. Team player."
             description = "Personal website"
             keywords = "blog,developer,personal"
 
@@ -92,6 +93,11 @@ pygmentsUseClasses = true
                 url = "articles"
 
             [[languages.en.menu.main]]
+                name = "Products"
+                weight = 3.0
+                url = "products"
+
+            [[languages.en.menu.main]]
                 name = "Imprint"
-                weight = 2.0
+                weight = 4.0
                 url = "impressum"
