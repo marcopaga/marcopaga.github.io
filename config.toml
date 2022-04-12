@@ -89,8 +89,13 @@ pygmentsUseClasses = true
 
             [[languages.en.menu.main]]
                 name = "Articles"
-                weight = 2.0
+                weight = 2.1
                 url = "articles"
+
+            [[languages.en.menu.main]]
+                name = "Posts"
+                weight = 2.2
+                url = "entries"
 
             [[languages.en.menu.main]]
                 name = "Products"
