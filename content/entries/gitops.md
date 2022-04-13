@@ -2,6 +2,9 @@
 title: "Gitops"
 date: 2022-04-12T08:17:03+01:00
 ---
+
+{{<tableOfContents>}}
+
 ## Was ist GitOps?
 GitOps betrachtet den Auslieferungsprozess von Software auf den verschiedenen Stages von einer Entwicklungsumgebung bis hin zu einer produktiven Umgebung. Wie der Name schon vermuten lässt, wird git als Versionskontrollsystem verwendet und bildet damit die revisionssichere Historie ab. Alle Änderungen werden über diesen nachvollziehbaren Weg in eine Umgebung gebracht. Weiter gedacht wird die Umgebung an sich genau so erstellt und verwaltet.
 ## Warum?

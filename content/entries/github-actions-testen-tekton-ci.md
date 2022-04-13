@@ -3,6 +3,8 @@ title: "Github Actions test a full Tekton CI installation"
 date: 2022-02-15T00:00:00+01:00
 ---
 
+{{<tableOfContents>}}
+
 In software development, it is good practice to write tests for the productive code. We see the value in our daily work in many places when it comes to further developing the software.
 But CI - systems, although they make the safety net possible for whole teams in the first place, are often far from the principle. Build and test configurations are all too often developed and used without a net and a double bottom.
 This is where I would like to start and take the proven principle even further. The article describes the setup of a tested CI system using the example of Tekton with GitHub Actions.
