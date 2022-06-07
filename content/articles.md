@@ -3,6 +3,10 @@ title: "Articles"
 date: 2022-02-06T14:58:16+01:00
 ---
 
+## 18.05.2022
+
+[Artikel im Softwerker Vol. 20](https://info.codecentric.de/softwerker-vol-20)
+
 ## 29.04.2022
 
 [Github Actions test a full Tekton CI installation](https://blog.codecentric.de/en/2022/04/github-actions-test-a-full-tekton-ci-installation/)
