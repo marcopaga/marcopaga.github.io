@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/m_p_dus
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://marco-paga.eu
+  * I am m_p_dus (https://keybase.io/m_p_dus) on keybase.
+  * I have a public key ASDOQ9ZgmoHj2ypjJ44OKtTtsfUz5RkQjU8sAbk-Wd6Cwgo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120ce43d6609a81e3db2a63278e0e2ad4edb1f533e519108d4f2c01b93e59de82c20a",
+            "host": "keybase.io",
+            "kid": "0120ce43d6609a81e3db2a63278e0e2ad4edb1f533e519108d4f2c01b93e59de82c20a",
+            "uid": "eee73516548840f629e4d5c14b3cf319",
+            "username": "m_p_dus"
+        },
+        "service": {
+            "hostname": "marco-paga.eu",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.15"
+    },
+    "ctime": 1462093928,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1462093868,
+        "hash": "4db36dec54ae5b1a832dee59cc4c71a07bb02ae34c4b55d33a1b5ff3a14aefad4295d1607e80b56c0fdf59926420325f82c71b84242b4327c98f4f5fe1168ba6",
+        "seqno": 454460
+    },
+    "prev": "cc41546213e30a30d23f5cb635d16d6b7454c3a1116d52e80bbbe52bec28005b",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgzkPWYJqB49sqYyeODirU7bH1M+UZEI1PLAG5PlnegsIKp3BheWxvYWTFAvN7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwY2U0M2Q2NjA5YTgxZTNkYjJhNjMyNzhlMGUyYWQ0ZWRiMWY1MzNlNTE5MTA4ZDRmMmMwMWI5M2U1OWRlODJjMjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwY2U0M2Q2NjA5YTgxZTNkYjJhNjMyNzhlMGUyYWQ0ZWRiMWY1MzNlNTE5MTA4ZDRmMmMwMWI5M2U1OWRlODJjMjBhIiwidWlkIjoiZWVlNzM1MTY1NDg4NDBmNjI5ZTRkNWMxNGIzY2YzMTkiLCJ1c2VybmFtZSI6Im1fcF9kdXMifSwic2VydmljZSI6eyJob3N0bmFtZSI6Im1hcmNvLXBhZ2EuZXUiLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE1In0sImN0aW1lIjoxNDYyMDkzOTI4LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0NjIwOTM4NjgsImhhc2giOiI0ZGIzNmRlYzU0YWU1YjFhODMyZGVlNTljYzRjNzFhMDdiYjAyYWUzNGM0YjU1ZDMzYTFiNWZmM2ExNGFlZmFkNDI5NWQxNjA3ZTgwYjU2YzBmZGY1OTkyNjQyMDMyNWY4MmM3MWI4NDI0MmI0MzI3Yzk4ZjRmNWZlMTE2OGJhNiIsInNlcW5vIjo0NTQ0NjB9LCJwcmV2IjoiY2M0MTU0NjIxM2UzMGEzMGQyM2Y1Y2I2MzVkMTZkNmI3NDU0YzNhMTExNmQ1MmU4MGJiYmU1MmJlYzI4MDA1YiIsInNlcW5vIjo5LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQLY3slTjXDliqFgSRZt9xgbeVKsW3G5pcFt7/jkbbWCVUK0CiBwWjcg9CIVmzgmwxqhdZNaD2SepUB8HkYV9agWoc2lnX3R5cGUgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/m_p_dus
+
+==================================================================
