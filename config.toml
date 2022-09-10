@@ -76,14 +76,14 @@ pygmentsUseClasses = true
         # You can configure the theme parameter for each language.
         [languages.en.params]
             author = "Marco Paga"
-            info = "Problem solver. Team player."
+            info = "Solution Architect and Senior Full Stack Engineer"
             description = "Personal website"
             keywords = "blog,developer,personal"
 
         [languages.en.menu] # It is possible to change the menu too.
 
             [[languages.en.menu.main]]
-                name = "About"
+                name = "Start"
                 weight = 1.0
                 url = "index.html"
 
@@ -98,9 +98,9 @@ pygmentsUseClasses = true
                 url = "entries"
 
             [[languages.en.menu.main]]
-                name = "Products"
+                name = "About me"
                 weight = 3.0
-                url = "products"
+                url = "about-me"
 
             [[languages.en.menu.main]]
                 name = "Imprint"
