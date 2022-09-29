@@ -23,7 +23,7 @@ jobs:
           # extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --baseURL="https://marco-paga.eu"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
