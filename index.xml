@@ -5,8 +5,7 @@ Tekton Triggers is a Tekton project which allows to receive webhooks and react a
 Tekton triggers includes a conecpt which is called Interceptors that provide a way to implement cross cutting concerns. To give you a quick example: If you integrate Github with Tekton you hopefully want to validate if your project is calling the tekton installation since you don&amp;rsquo;t want anybody stumbling on your tekton installation to run pipelines.</description></item><item><title>Github Actions test a full Tekton CI installation</title><link>https://marco-paga.eu/entries/github-actions-testen-tekton-ci/</link><pubDate>Tue, 15 Feb 2022 00:00:00 +0100</pubDate><guid>https://marco-paga.eu/entries/github-actions-testen-tekton-ci/</guid><description>Table of contents: Tekton Cloud Native CI/CD A boiled down CI Pipeline Interacting with tekton GitHub Actions Demo Project The Testing Recap In software development, it is good practice to write tests for the productive code. We see the value in our daily work in many places when it comes to further developing the software. But CI - systems, although they make the safety net possible for whole teams in the first place, are often far from the principle.</description></item><item><title>Impressum</title><link>https://marco-paga.eu/impressum/</link><pubDate>Mon, 07 Feb 2022 10:39:12 +0100</pubDate><guid>https://marco-paga.eu/impressum/</guid><description>Angaben gemäß § 5 TMG Marco Paga
 Graf-Recke-ѕtr. 5
 40239 Düsseldorf
-Kontakt Telefon: 015678575893
-E-Mail: marco.paga@gmail.com
+Kontakt E-Mail: marco.paga@gmail.com
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: Marco Paga
 Graf-Recke-ѕtr. 5
 40239 Düsseldorf
