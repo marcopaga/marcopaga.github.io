@@ -11,7 +11,7 @@ M&#x61;rco P&#x61;ga
 
 ## Kontakt
 
- <!--sse-->Telefon: 015678575893<!--/sse-->
+Telefon: 015678575893  
 E-Mail: [marco.paga@gmail.com](mailto:marco.paga@gmail.com?subject=Kontaktanfrage)
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
