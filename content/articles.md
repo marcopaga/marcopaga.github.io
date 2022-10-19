@@ -3,6 +3,12 @@ title: "Articles"
 date: 2022-02-06T14:58:16+01:00
 ---
 
+## 19.10.2022
+
+[Open Policy Agent – Maschinen, die auf Regeln starren](https://blog.codecentric.de/open-policy-agent-intro)
+
+[Open Policy Agent – Primer](https://blog.codecentric.de/open-policy-agent-primer-and-sample)
+
 ## 18.05.2022
 
 [Artikel im Softwerker Vol. 20](https://info.codecentric.de/softwerker-vol-20)
