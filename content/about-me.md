@@ -5,6 +5,12 @@ date: 2022-08-01T00:00:00+01:00
 
 Here you can find a short information about my current skill set.
 
+# Community
+![Local IT Lunch Logo](/images/Logo_IT_Lunch.png)
+
+- 2022: Founder of the [Local IT Lunch](https://www.meetup.com/de-DE/local-it-lunch/) as a lean networking meetup for IT people in Düsseldorf.
+- 2016: Founder of the [Clojure Meetup Düsseldorf](https://www.meetup.com/de-DE/clojure-duesseldorf/) to connect all the clojure fans in Düsseldorf.
+
 # Skills proven in professional projects
 
 | Topic | Item |
