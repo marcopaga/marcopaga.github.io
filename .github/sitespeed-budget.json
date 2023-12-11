@@ -1,0 +1,24 @@
+{
+  "budget": {
+    "requests": {
+        "total": 100
+    },
+    "transferSize": {
+        "total": 610000
+    },
+    "thirdParty": {
+        "requests": 0
+    },
+    "score": {
+      "bestpractice": 100,
+      "privacy": 80,
+      "performance": 90
+    },
+    "sustainable": {
+      "totalCO2": 0.22,
+      "co2PerPageView": 0.22,
+      "co2FirstParty": 0.22,
+      "co2ThirdParty": 0
+    }
+  }
+}
