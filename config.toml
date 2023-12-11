@@ -76,9 +76,9 @@ pygmentsUseClasses = true
         # You can configure the theme parameter for each language.
         [languages.en.params]
             author = "Marco Paga"
-            info = "Senior Solution Architect and Senior Full Stack Engineer"
+            info = ""
             description = "Personal website"
-            keywords = "blog,developer,personal"
+            keywords = "blog,personal"
 
         [languages.en.menu] # It is possible to change the menu too.
 
