@@ -7,6 +7,11 @@ date: 2022-08-01T00:00:00+01:00
 
 Since 2022 I'm with the [Softwerker Cast](https://www.codecentric.de/softwerkercast). I'm moderating, planing the content and organize the interviews. Subscribe at [podfollow.com](https://podfollow.com/1592472699/view).
 
+# Talks
+- "Green Softwawre in der Praxis 12.12.2023" - [Tech & Talk Dortmund Meetup](https://www.meetup.com/de-DE/codecentric-dortmund-tech-talk/events/297443886)
+- "Green Softwawre in der Praxis 11.01.2024" - [Tech & Talk Solingen Meetup](https://cclnk.de/48zxE6m)
+- "Green Softwawre in der Praxis 29.02.2024" - [Developer Group Moers Meetup](https://www.meetup.com/developer-group-moers/events/298438138/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=linkedin)
+
 # Community
 - 2023 Founder of the [Green Software Meetup Düsseldorf](https://www.meetup.com/de-DE/green-software-meetup-dusseldorf/)
 - 2022: Founder of the [Local IT Lunch](https://www.meetup.com/de-DE/local-it-lunch/) as a lean networking meetup for IT people in Düsseldorf.
