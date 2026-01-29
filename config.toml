@@ -6,7 +6,8 @@ theme = "coder-portfolio"
 DefaultContentLanguage = "en"
 translationKey = 'about'
 
-paginate = 20
+[pagination]
+pagerSize = 20
 
 pygmentsstyle = "b2"
 pygmentscodefences = true
