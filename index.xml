@@ -1,22 +1,143 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Marco Paga</title><link>https://marco-paga.eu/</link><description>Recent content on Marco Paga</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 12 Apr 2022 08:17:03 +0100</lastBuildDate><atom:link href="https://marco-paga.eu/index.xml" rel="self" type="application/rss+xml"/><item><title>About Me</title><link>https://marco-paga.eu/about-me/</link><pubDate>Mon, 01 Aug 2022 00:00:00 +0100</pubDate><guid>https://marco-paga.eu/about-me/</guid><description>Podcasting Since 2022 I&amp;rsquo;m with the Softwerker Cast. I&amp;rsquo;m moderating, planing the content and organize the interviews. Subscribe at podfollow.com.
-Talks &amp;ldquo;Green Softwawre in der Praxis 12.12.2023&amp;rdquo; - Tech &amp;amp; Talk Dortmund Meetup &amp;ldquo;Green Softwawre in der Praxis 11.01.2024&amp;rdquo; - Tech &amp;amp; Talk Solingen Meetup &amp;ldquo;Green Softwawre in der Praxis 29.02.2024&amp;rdquo; - Developer Group Moers Meetup Community 2023 Founder of the Green Software Meetup Düsseldorf 2022: Founder of the Local IT Lunch as a lean networking meetup for IT people in Düsseldorf.</description></item><item><title>Gitops</title><link>https://marco-paga.eu/entries/gitops/</link><pubDate>Tue, 12 Apr 2022 08:17:03 +0100</pubDate><guid>https://marco-paga.eu/entries/gitops/</guid><description>Table of contents: Was ist GitOps? Warum? Was war nochmal Infastructure as Code? GitOps Flux CD Flux Version 2 Komponenten Konzepte „Hello, World!“ Fazit und Ausblick Was ist GitOps? GitOps betrachtet den Auslieferungsprozess von Software auf den verschiedenen Stages von einer Entwicklungsumgebung bis hin zu einer produktiven Umgebung. Wie der Name schon vermuten lässt, wird git als Versionskontrollsystem verwendet und bildet damit die revisionssichere Historie ab. Alle Änderungen werden über diesen nachvollziehbaren Weg in eine Umgebung gebracht.</description></item><item><title>DevOps Acceleration Framework</title><link>https://marco-paga.eu/products/devops-acceleration-framework/</link><pubDate>Sun, 03 Apr 2022 08:45:58 +0200</pubDate><guid>https://marco-paga.eu/products/devops-acceleration-framework/</guid><description>Overview Motivation &amp;ldquo;We are too slow! The competitors are running ahead of us. What can we do to be faster?&amp;rdquo; Anyone who is familiar with these questions knows how difficult they are to answer. You focus on the teams and processes involved and you can&amp;rsquo; t find the problem.
-If this sounds familiar, I can help you with the DevOps Acceleration Framework. The framework offers you a proven path from inventory to solution finding embedded in a transparent process.</description></item><item><title>Tekton Triggers CEL</title><link>https://marco-paga.eu/entries/tekton-triggers-cel/</link><pubDate>Sun, 27 Feb 2022 14:49:03 +0100</pubDate><guid>https://marco-paga.eu/entries/tekton-triggers-cel/</guid><description>or how to convert a git ref to a branch name
-Tekton Triggers is a Tekton project which allows to receive webhooks and react appropriately to those. You can follow along my article on the codecentric blog to see what is possible.
-Tekton triggers includes a conecpt which is called Interceptors that provide a way to implement cross cutting concerns. To give you a quick example: If you integrate Github with Tekton you hopefully want to validate if your project is calling the tekton installation since you don&amp;rsquo;t want anybody stumbling on your tekton installation to run pipelines.</description></item><item><title>Github Actions test a full Tekton CI installation</title><link>https://marco-paga.eu/entries/github-actions-testen-tekton-ci/</link><pubDate>Tue, 15 Feb 2022 00:00:00 +0100</pubDate><guid>https://marco-paga.eu/entries/github-actions-testen-tekton-ci/</guid><description>Table of contents: Tekton Cloud Native CI/CD A boiled down CI Pipeline Interacting with tekton GitHub Actions Demo Project The Testing Recap In software development, it is good practice to write tests for the productive code. We see the value in our daily work in many places when it comes to further developing the software. But CI - systems, although they make the safety net possible for whole teams in the first place, are often far from the principle.</description></item><item><title>Impressum</title><link>https://marco-paga.eu/impressum/</link><pubDate>Mon, 07 Feb 2022 10:39:12 +0100</pubDate><guid>https://marco-paga.eu/impressum/</guid><description>Angaben gemäß § 5 TMG Marco Paga
-Graf-Recke-ѕtr. 5
-40239 Düsseldorf
-Kontakt Telefon: 015678575893
-E-Mail: marco.paga@gmail.com
-Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: Marco Paga
-Graf-Recke-ѕtr. 5
-40239 Düsseldorf
-Haftung fuer Inhalte Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen. Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</description></item><item><title>Articles</title><link>https://marco-paga.eu/articles/</link><pubDate>Sun, 06 Feb 2022 14:58:16 +0100</pubDate><guid>https://marco-paga.eu/articles/</guid><description>19.10.2022 Open Policy Agent – Maschinen, die auf Regeln starren
-Open Policy Agent – Primer
-18.05.2022 Artikel im Softwerker Vol. 20
-29.04.2022 Github Actions test a full Tekton CI installation
-04.03.2022 Tekton Triggers in der Praxis
-Tekton Triggers in practice
-11.02.2022 Tekton Buildpack Pipeline: Alles schon da?
-Standing on the shoulders of the Tekton community: Tekton buildpack pipeline
-19.01.2022 Tekton Cloud-native CI/CD – a pragmatic intro
-Tekton Cloud-Native CI/CD: Ein pragmatisches Intro</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Marco Paga</title><link>https://marco-paga.eu/</link><description>Recent content on Marco Paga</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://marco-paga.eu/index.xml" rel="self" type="application/rss+xml"/><item><title>About Me</title><link>https://marco-paga.eu/about-me/</link><pubDate>Mon, 01 Aug 2022 00:00:00 +0100</pubDate><guid>https://marco-paga.eu/about-me/</guid><description>&lt;h1 id="podcasting"&gt;Podcasting&lt;/h1&gt;
+&lt;p&gt;Since 2022 I&amp;rsquo;m with the &lt;a href="https://www.codecentric.de/softwerkercast"&gt;Softwerker Cast&lt;/a&gt;. I&amp;rsquo;m moderating, planing the content and organize the interviews. Subscribe at &lt;a href="https://podfollow.com/1592472699/view"&gt;podfollow.com&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id="talks"&gt;Talks&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.meetup.com/de-DE/codecentric-dortmund-tech-talk/events/310422685/"&gt;&amp;ldquo;Nachhaltigkeit Ganzheitlich gedacht&amp;rdquo; im Rahmen der DiWoDo 2025&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;Green Software in der Praxis 11.01.2024&amp;rdquo; - &lt;a href="https://cclnk.de/48zxE6m"&gt;Tech &amp;amp; Talk Solingen Meetup&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;Green Software in der Praxis 29.02.2024&amp;rdquo; - &lt;a href="https://www.meetup.com/developer-group-moers/events/298438138/?utm_medium=referral&amp;amp;utm_campaign=share-btn_savedevents_share_modal&amp;amp;utm_source=linkedin"&gt;Developer Group Moers Meetup&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;Green Software in der Praxis 12.12.2023&amp;rdquo; - &lt;a href="https://www.meetup.com/de-DE/codecentric-dortmund-tech-talk/events/297443886"&gt;Tech &amp;amp; Talk Dortmund Meetup&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="community"&gt;Community&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;2023 Founder of the &lt;a href="https://www.meetup.com/de-DE/green-software-meetup-dusseldorf/"&gt;Green Software Meetup Düsseldorf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2022: Founder of the &lt;a href="https://www.meetup.com/de-DE/local-it-lunch/"&gt;Local IT Lunch&lt;/a&gt; as a lean networking meetup for IT people in Düsseldorf.&lt;/li&gt;
+&lt;li&gt;2016: Founder of the &lt;a href="https://www.meetup.com/de-DE/clojure-duesseldorf/"&gt;Clojure Meetup Düsseldorf&lt;/a&gt; to connect all the clojure fans in Düsseldorf.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="skills-proven-in-professional-projects"&gt;Skills proven in professional projects&lt;/h1&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Topic&lt;/th&gt;
+ &lt;th&gt;Item&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Focus&lt;/td&gt;
+ &lt;td&gt;Platform Engineering, Green IT&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Workshops&lt;/td&gt;
+ &lt;td&gt;Requirements Workshopss, Technical Workshops, Architecture Reviews, Assessments&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;CI/CD&lt;/td&gt;
+ &lt;td&gt;Gitlab Pipelines, Github Actions, Azure DevOps, Tekton, Jenkins&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Platforms&lt;/td&gt;
+ &lt;td&gt;Containers, Kubernetes, AWS, Azure, Google Cloud, on-prem Solutions&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Server&lt;/td&gt;
+ &lt;td&gt;Tomcat, Jetty, Nginx, Traefik, Apache&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Modelling&lt;/td&gt;
+ &lt;td&gt;UML, BPMN, OpenAPI and more Tool-specific Notations&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Languages&lt;/td&gt;
+ &lt;td&gt;Java/Kotlin Spring Ecosystem, TypeScript with NestJS, Angular and React, Python, HTML&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Persistence&lt;/td&gt;
+ &lt;td&gt;Oracle SQL with PL/SQL, DynamoDB, Streaming Architectures with e.g. Redis and Kafka&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Tooling&lt;/td&gt;
+ &lt;td&gt;AWS CDK, Ansible, Terraform, Vault, Helm, Keda, maven, gradle, npm&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;GitOps&lt;/td&gt;
+ &lt;td&gt;Flux2, ArgoCD in einer Pipeline mit Gitlab and Tekton&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Observability&lt;/td&gt;
+ &lt;td&gt;ELK Stack, Grafana, Datadog, Instana&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id="linkedin"&gt;LinkedIn&lt;/h1&gt;
+&lt;p&gt;Find me on LinkedIn: &lt;a href="https://www.linkedin.com/in/marco-paga/"&gt;https://www.linkedin.com/in/marco-paga/&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Gitops</title><link>https://marco-paga.eu/entries/gitops/</link><pubDate>Tue, 12 Apr 2022 08:17:03 +0100</pubDate><guid>https://marco-paga.eu/entries/gitops/</guid><description>Table of contents: &lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#was-ist-gitops"&gt;Was ist GitOps?&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#warum"&gt;Warum?&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#was-war-nochmal-infastructure-as-code"&gt;Was war nochmal Infastructure as Code?&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#gitops"&gt;GitOps&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#flux-cd"&gt;Flux CD&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#flux-version-2"&gt;Flux Version 2&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#komponenten"&gt;Komponenten&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#konzepte"&gt;Konzepte&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#hello-world"&gt;„Hello, World!“&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#fazit-und-ausblick"&gt;Fazit und Ausblick&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h2 id="was-ist-gitops"&gt;Was ist GitOps?&lt;/h2&gt;
+&lt;p&gt;GitOps betrachtet den Auslieferungsprozess von Software auf den verschiedenen Stages von einer Entwicklungsumgebung bis hin zu einer produktiven Umgebung. Wie der Name schon vermuten lässt, wird git als Versionskontrollsystem verwendet und bildet damit die revisionssichere Historie ab. Alle Änderungen werden über diesen nachvollziehbaren Weg in eine Umgebung gebracht. Weiter gedacht wird die Umgebung an sich genau so erstellt und verwaltet.&lt;/p&gt;</description></item><item><title>DevOps Acceleration Framework</title><link>https://marco-paga.eu/products/devops-acceleration-framework/</link><pubDate>Sun, 03 Apr 2022 08:45:58 +0200</pubDate><guid>https://marco-paga.eu/products/devops-acceleration-framework/</guid><description>&lt;h1 id="overview"&gt;Overview&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://marco-paga.eu/images/devops-acceleration-framework.jpeg" alt=""&gt;&lt;/p&gt;
+&lt;h1 id="motivation"&gt;Motivation&lt;/h1&gt;
+&lt;p&gt;&amp;ldquo;We are too slow! The competitors are running ahead of us. What can we do to be faster?&amp;rdquo;
+Anyone who is familiar with these questions knows how difficult they are to answer. You focus on the teams and processes involved and you can&amp;rsquo; t find the problem.&lt;/p&gt;
+&lt;p&gt;If this sounds familiar, I can help you with the DevOps Acceleration Framework. The framework offers you a proven path from inventory to solution finding embedded in a transparent process.&lt;/p&gt;</description></item><item><title>Tekton Triggers CEL</title><link>https://marco-paga.eu/entries/tekton-triggers-cel/</link><pubDate>Sun, 27 Feb 2022 14:49:03 +0100</pubDate><guid>https://marco-paga.eu/entries/tekton-triggers-cel/</guid><description>&lt;p&gt;&lt;em&gt;or how to convert a git ref to a branch name&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/tektoncd/triggers"&gt;Tekton Triggers&lt;/a&gt; is a Tekton project which allows to receive webhooks and react appropriately to those. You can follow along &lt;a href="https://blog.codecentric.de/en/2022/03/tekton-triggers-in-practice/"&gt;my article on the codecentric blog&lt;/a&gt; to see what is possible.&lt;/p&gt;
+&lt;p&gt;Tekton triggers includes a conecpt which is called &lt;a href="https://github.com/tektoncd/triggers/blob/main/docs/interceptors.md"&gt;Interceptors&lt;/a&gt; that provide a way to implement cross cutting concerns.
+To give you a quick example: If you integrate Github with Tekton you hopefully want to validate if &lt;strong&gt;your&lt;/strong&gt; project is calling the tekton installation since you don&amp;rsquo;t want anybody stumbling on your tekton installation to run pipelines. How hard can it be? Just have a look at the &lt;a href="https://docs.github.com/en/developers/webhooks-and-events/webhooks/securing-your-webhooks"&gt;documentation&lt;/a&gt; and see that you need to exchange secrests and need to run HMAC on the encoded request. Long story short: Just integrate the &lt;a href="https://github.com/tektoncd/triggers/blob/main/docs/interceptors.md#github-interceptors"&gt;GitHub&lt;/a&gt; interceptor and you are done.&lt;/p&gt;</description></item><item><title>Github Actions test a full Tekton CI installation</title><link>https://marco-paga.eu/entries/github-actions-testen-tekton-ci/</link><pubDate>Tue, 15 Feb 2022 00:00:00 +0100</pubDate><guid>https://marco-paga.eu/entries/github-actions-testen-tekton-ci/</guid><description>Table of contents: &lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#tekton-cloud-native-cicd"&gt;Tekton Cloud Native CI/CD&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#a-boiled-down-ci-pipeline"&gt;A boiled down CI Pipeline&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#interacting-with-tekton"&gt;Interacting with tekton&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#github-actions"&gt;GitHub Actions&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#demo-project"&gt;Demo Project&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#the-testing"&gt;The Testing&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#recap"&gt;Recap&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;p&gt;In software development, it is good practice to write tests for the productive code. We see the value in our daily work in many places when it comes to further developing the software.
+But CI - systems, although they make the safety net possible for whole teams in the first place, are often far from the principle. Build and test configurations are all too often developed and used without a net and a double bottom.
+This is where I would like to start and take the proven principle even further. The article describes the setup of a tested CI system using the example of Tekton with GitHub Actions.&lt;/p&gt;</description></item><item><title>Impressum</title><link>https://marco-paga.eu/impressum/</link><pubDate>Mon, 07 Feb 2022 10:39:12 +0100</pubDate><guid>https://marco-paga.eu/impressum/</guid><description>&lt;h2 id="angaben-gemäß--5-tmg"&gt;Angaben gemäß § 5 TMG&lt;/h2&gt;
+&lt;p&gt;Marco Paga&lt;br&gt;
+Graf-Recke-ѕtr. 5&lt;br&gt;
+40239 Düsseldorf&lt;/p&gt;
+&lt;h2 id="kontakt"&gt;Kontakt&lt;/h2&gt;
+&lt;p&gt;Telefon: 015678575893&lt;br&gt;
+E-Mail: &lt;a href="mailto:marco.paga@gmail.com?subject=Kontaktanfrage"&gt;marco.paga@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="verantwortlich-für-den-inhalt-nach--55-abs-2-rstv"&gt;Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:&lt;/h2&gt;
+&lt;p&gt;Marco Paga&lt;br&gt;
+Graf-Recke-ѕtr. 5&lt;br&gt;
+40239 Düsseldorf&lt;/p&gt;
+&lt;h2 id="haftung-fuer-inhalte"&gt;Haftung fuer Inhalte&lt;/h2&gt;
+&lt;p&gt;Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen. Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.&lt;/p&gt;</description></item><item><title>Articles</title><link>https://marco-paga.eu/articles/</link><pubDate>Sun, 06 Feb 2022 14:58:16 +0100</pubDate><guid>https://marco-paga.eu/articles/</guid><description>&lt;h2 id="19102022"&gt;19.10.2022&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://blog.codecentric.de/open-policy-agent-intro"&gt;Open Policy Agent – Maschinen, die auf Regeln starren&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://blog.codecentric.de/open-policy-agent-primer-and-sample"&gt;Open Policy Agent – Primer&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="18052022"&gt;18.05.2022&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://info.codecentric.de/softwerker-vol-20"&gt;Artikel im Softwerker Vol. 20&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="29042022"&gt;29.04.2022&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://blog.codecentric.de/en/2022/04/github-actions-test-a-full-tekton-ci-installation/"&gt;Github Actions test a full Tekton CI installation&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="04032022"&gt;04.03.2022&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://blog.codecentric.de/2022/03/tekton-triggers-in-der-praxis/"&gt;Tekton Triggers in der Praxis&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://blog.codecentric.de/en/2022/03/tekton-triggers-in-practice/"&gt;Tekton Triggers in practice&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="11022022"&gt;11.02.2022&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://blog.codecentric.de/2022/02/alles-schon-da-tekton-buildpack-pipeline/"&gt;Tekton Buildpack Pipeline: Alles schon da?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://blog.codecentric.de/en/2022/02/tekton-buildpack-pipeline/"&gt;Standing on the shoulders of the Tekton community: Tekton buildpack pipeline&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="19012022"&gt;19.01.2022&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://blog.codecentric.de/en/2022/01/tekton-cloud-native-ci-cd-pragmatic-intro/"&gt;Tekton Cloud-native CI/CD – a pragmatic intro&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://blog.codecentric.de/2022/01/tekton-cloud-native-ci-cd-ein-pragmatisches-intro/"&gt;Tekton Cloud-Native CI/CD: Ein pragmatisches Intro&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
