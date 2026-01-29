@@ -1,0 +1,126 @@
+name: Test Build and Content
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.152.2'
+          extended: true
+
+      - name: Build site
+        run: hugo --minify --baseURL="https://marco-paga.eu"
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-site
+          path: public/
+          retention-days: 1
+
+  content-validation:
+    runs-on: ubuntu-latest
+    needs: build-test
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: public-site
+          path: public/
+
+      - name: Check critical pages exist
+        run: |
+          echo "Checking critical pages..."
+
+          # Check homepage
+          if [ ! -f "public/index.html" ]; then
+            echo "ERROR: Homepage (index.html) not found"
+            exit 1
+          fi
+          echo "✓ Homepage exists"
+
+          # Check articles page
+          if [ ! -f "public/articles/index.html" ]; then
+            echo "ERROR: Articles page not found"
+            exit 1
+          fi
+          echo "✓ Articles page exists"
+
+          # Check entries listing
+          if [ ! -f "public/entries/index.html" ]; then
+            echo "ERROR: Entries page not found"
+            exit 1
+          fi
+          echo "✓ Entries page exists"
+
+          # Check about page
+          if [ ! -f "public/about-me/index.html" ]; then
+            echo "ERROR: About page not found"
+            exit 1
+          fi
+          echo "✓ About page exists"
+
+      - name: Validate HTML structure
+        run: |
+          echo "Validating HTML structure..."
+
+          # Check homepage has basic HTML structure
+          if ! grep -q "<html" public/index.html; then
+            echo "ERROR: Homepage missing <html> tag"
+            exit 1
+          fi
+
+          if ! grep -q "<head" public/index.html; then
+            echo "ERROR: Homepage missing <head> tag"
+            exit 1
+          fi
+
+          if ! grep -q "<body" public/index.html; then
+            echo "ERROR: Homepage missing <body> tag"
+            exit 1
+          fi
+
+          # Check no 404 errors in critical pages
+          if grep -qi "404\|page not found" public/index.html; then
+            echo "ERROR: Homepage contains 404 error"
+            exit 1
+          fi
+
+          echo "✓ HTML structure is valid"
+
+      - name: Check static assets
+        run: |
+          echo "Checking static assets..."
+
+          # Check if CSS directory exists
+          if [ ! -d "public/css" ]; then
+            echo "ERROR: CSS directory not found"
+            exit 1
+          fi
+          echo "✓ CSS directory exists"
+
+          # Check if at least one CSS file exists
+          if [ -z "$(ls -A public/css/*.css 2>/dev/null)" ]; then
+            echo "ERROR: No CSS files found"
+            exit 1
+          fi
+          echo "✓ CSS files exist"
+
+          echo "All checks passed!"

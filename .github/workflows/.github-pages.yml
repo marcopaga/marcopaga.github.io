@@ -10,6 +10,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-24.04
+    # Note: The test.yml workflow runs separately on PRs and validates the build
+    # This workflow only deploys to GitHub Pages when pushing to main branch
     steps:
       - uses: actions/checkout@v6
         with:

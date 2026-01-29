@@ -1,5 +1,42 @@
 {
-  "extends": [
-    "config:base"
-  ]
+  "extends": ["config:base"],
+  "labels": ["dependencies", "renovate"],
+  "schedule": ["before 6am on monday"],
+  "timezone": "Europe/Berlin",
+  "packageRules": [
+    {
+      "description": "Auto-merge GitHub Actions patch/minor updates",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": true,
+      "automergeType": "pr",
+      "requiredStatusChecks": ["build-test", "content-validation"]
+    },
+    {
+      "description": "Auto-merge Docker image patches",
+      "matchDatasources": ["docker"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true,
+      "requiredStatusChecks": ["build-test"]
+    },
+    {
+      "description": "Manual review for major updates",
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "labels": ["dependencies", "major-update"]
+    },
+    {
+      "description": "Never auto-merge Hugo version",
+      "matchPackageNames": ["gohugoio/hugo"],
+      "automerge": false,
+      "labels": ["hugo-update", "needs-manual-review"]
+    },
+    {
+      "description": "Group GitHub Actions updates",
+      "matchManagers": ["github-actions"],
+      "groupName": "GitHub Actions"
+    }
+  ],
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 2
 }
