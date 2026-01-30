@@ -12,7 +12,7 @@ Senior Solution Architect at [codecentric AG](https://www.codecentric.de/) (sinc
 ## Core Expertise
 
 **Cloud-Native & Kubernetes:**
-- Certified Kubernetes for Developers Trainer (2019)
+- Kubernetes for Developers Trainer (2019)
 - Production Kubernetes deployments across AWS, Azure, and GCP
 - GitOps implementations with Flux CD and ArgoCD
 - Container orchestration and microservices architecture
@@ -34,25 +34,22 @@ Senior Solution Architect at [codecentric AG](https://www.codecentric.de/) (sinc
 # Verified Credentials & Certifications
 
 **Professional Training Certifications:**
-- **Certified Trainer:** Kubernetes for Developers (2019) - Official Kubernetes training certification
-- **Certified Trainer:** Docker for Developers (2019) - Container technology training certification
-- **IT Specialist in Application Development** (IHK, 2008) - German Chamber of Commerce certification
+- **Trainer:** Kubernetes for Developers (2019) - Official Kubernetes training certification
+- **Trainer:** Docker for Developers (2019) - Container technology training certification
 
 **Employment History:**
 - **codecentric AG** - Senior Solution Architect (2022 - Present)
 - **25+ years** of continuous professional software development experience
-- Verifiable track record across multiple Fortune 500 companies and enterprises
 
 # Awards & Recognition
 
 - **2025:** codecentric Community Award - Best Podcast or Vlog
 - **2024:** codecentric Community Award - Best Podcast or Vlog
 - **2023:** codecentric Community Award - Corporate Social Responsibility
-- **2006:** JOY2006 Innovation Award Winner (METRO Group)
 
 # Content Creation & Media
 
-**Podcast Host & Producer:**
+**Podcast Host:**
 
 Since 2022, I host and produce the [Softwerker Cast](https://www.codecentric.de/softwerkercast), a podcast featuring conversations with technology leaders and innovators in the German tech scene. Responsibilities include:
 - Moderating technical discussions with industry experts
