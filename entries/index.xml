@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Entries on Marco Paga</title><link>https://marco-paga.eu/entries/</link><description>Recent content in Entries on Marco Paga</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 12 Apr 2022 08:17:03 +0100</lastBuildDate><atom:link href="https://marco-paga.eu/entries/index.xml" rel="self" type="application/rss+xml"/><item><title>Gitops</title><link>https://marco-paga.eu/entries/gitops/</link><pubDate>Tue, 12 Apr 2022 08:17:03 +0100</pubDate><guid>https://marco-paga.eu/entries/gitops/</guid><description>Table of contents: &lt;nav id="TableOfContents"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Entries on Marco Paga</title><link>https://marco-paga.eu/entries/</link><description>Recent content in Entries on Marco Paga</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 30 Jan 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://marco-paga.eu/entries/index.xml" rel="self" type="application/rss+xml"/><item><title>Ein Jahr Podcasting: Mut machen mit Geschichten aus der deutschen Tech-Szene</title><link>https://marco-paga.eu/entries/podcasting-highlights-2025/</link><pubDate>Fri, 30 Jan 2026 00:00:00 +0100</pubDate><guid>https://marco-paga.eu/entries/podcasting-highlights-2025/</guid><description>Table of contents: &lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#warum-dieser-rückblick"&gt;Warum dieser Rückblick?&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#innovation-in-der-industrie-benjamin-von-rosen"&gt;Innovation in der Industrie: Benjamin von Rosen&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#transformation-im-einzelhandel-omar-hairani-von-tchibo"&gt;Transformation im Einzelhandel: Omar Hairani von Tchibo&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#persönliche-erfolgsgeschichte-danny"&gt;Persönliche Erfolgsgeschichte: Danny&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#weitere-inspirierende-gespräche"&gt;Weitere inspirierende Gespräche&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#was-diese-gespräche-gemeinsam-haben"&gt;Was diese Gespräche gemeinsam haben&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#neue-perspektiven-und-ein-ausblick"&gt;Neue Perspektiven und ein Ausblick&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#fazit"&gt;Fazit&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h2 id="warum-dieser-rückblick"&gt;Warum dieser Rückblick?&lt;/h2&gt;
+&lt;p&gt;Im letzten Jahr hatte ich das Privileg, im Rahmen des SoftwerkerCast zahlreiche inspirierende Gespräche zu führen. Gespräche mit Menschen, die zeigen, was in Deutschland möglich ist, wenn moderne Technologien auf offenen Geist, gute Ideen und engagierte Menschen treffen. Dieser Artikel ist mein Versuch, einige dieser Begegnungen Revue passieren zu lassen und neue Perspektiven aufzuzeigen. Es geht darum, Mut zu machen und zu zeigen, dass in diesem Land richtig gute Dinge passieren.&lt;/p&gt;</description></item><item><title>Gitops</title><link>https://marco-paga.eu/entries/gitops/</link><pubDate>Tue, 12 Apr 2022 08:17:03 +0100</pubDate><guid>https://marco-paga.eu/entries/gitops/</guid><description>Table of contents: &lt;nav id="TableOfContents"&gt;
  &lt;ul&gt;
  &lt;li&gt;&lt;a href="#was-ist-gitops"&gt;Was ist GitOps?&lt;/a&gt;&lt;/li&gt;
  &lt;li&gt;&lt;a href="#warum"&gt;Warum?&lt;/a&gt;&lt;/li&gt;
