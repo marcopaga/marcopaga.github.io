@@ -17,7 +17,8 @@
       "matchDatasources": ["docker"],
       "matchUpdateTypes": ["patch"],
       "automerge": true,
-      "requiredStatusChecks": ["build-test"]
+      "automergeType": "pr",
+      "requiredStatusChecks": ["build-test", "content-validation"]
     },
     {
       "description": "Manual review for major updates",
