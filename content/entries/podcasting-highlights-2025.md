@@ -1,6 +1,14 @@
 ---
 title: "Ein Jahr Podcasting: Mut machen mit Geschichten aus der deutschen Tech-Szene"
 date: 2026-01-30T00:00:00+01:00
+lastmod: 2026-01-30T00:00:00+01:00
+description: "Reflections on a year of podcasting with SoftwerkerCast, featuring inspiring conversations with tech leaders from German companies about AI, innovation, and digital transformation."
+summary: "A year of inspiring podcast conversations showcasing innovation in German tech, from industrial AI safety to retail transformation and platform engineering."
+tags: ["Podcasting", "AI", "Innovation", "Digital Transformation", "Community", "Tech Leadership"]
+topics: ["Podcasting", "AI", "Community"]
+category: "Community & Content"
+author: "Marco Paga"
+keywords: "podcasting, SoftwerkerCast, AI safety, digital transformation, tech leadership, German tech scene, innovation, community"
 ---
 
 {{<tableOfContents>}}

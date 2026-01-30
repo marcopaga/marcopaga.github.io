@@ -1,6 +1,14 @@
 ---
 title: "Gitops"
 date: 2022-04-12T08:17:03+01:00
+lastmod: 2022-04-12T08:17:03+01:00
+description: "Comprehensive guide to implementing GitOps with Flux CD and Kubernetes. Learn about Infrastructure as Code principles, pull-based deployments, GitOps workflows, and practical examples for modern cloud-native deployments."
+summary: "A deep dive into GitOps methodology using Flux CD, covering IaC principles, declarative deployments, and practical Kubernetes examples."
+tags: ["GitOps", "Kubernetes", "FluxCD", "DevOps", "Infrastructure as Code", "CI/CD", "CNCF"]
+topics: ["Kubernetes", "GitOps", "CI/CD", "Cloud-Native", "DevOps"]
+category: "DevOps & Infrastructure"
+author: "Marco Paga"
+keywords: "GitOps, FluxCD, Kubernetes, Infrastructure as Code, IaC, declarative deployments, pull-based deployment, CNCF, DevOps, continuous deployment"
 ---
 
 {{<tableOfContents>}}

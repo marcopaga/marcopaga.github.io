@@ -5,22 +5,41 @@ date: 2022-08-01T00:00:00+01:00
 
 # Professional Summary
 
-Senior Solution Architect at codecentric AG (since 2022) with 25+ years of experience in software development, specializing in cloud-native architectures, DevOps transformations, and sustainable IT.
+Senior Solution Architect at [codecentric AG](https://www.codecentric.de/) (since 2022) with **25+ years of professional experience** in software development, specializing in cloud-native architectures, DevOps transformations, and sustainable IT practices.
 
 **Professional motto:** *"Expanding my comfort zone every day"*
 
-**Core expertise:**
-- Software Architecture & Cloud-Native Solutions
-- Platform Engineering & Green IT
-- DevOps & CI/CD Pipeline Design
-- Multi-Cloud Environments (AWS, Azure, GCP)
+## Core Expertise
 
-**Industry experience across 8 sectors:** Insurance, Energy, E-Mobility, Healthcare, Logistics, Audit/Compliance, Loyalty, and Retail.
+**Cloud-Native & Kubernetes:**
+- Kubernetes for Developers Trainer (2019)
+- Production Kubernetes deployments across AWS, Azure, and GCP
+- GitOps implementations with Flux CD and ArgoCD
+- Container orchestration and microservices architecture
 
-# Training & Certifications
+**DevOps & Platform Engineering:**
+- CI/CD pipeline design and implementation (Tekton, GitHub Actions, GitLab CI)
+- Infrastructure as Code with Terraform, AWS CDK, and Ansible
+- Multi-cloud platform engineering and migrations
+- Automated deployment strategies and release management
 
-- **Trainer:** Kubernetes for Developers (2019)
-- **Trainer:** Docker for Developers (2019)
+**Green IT & Sustainability:**
+- Sustainable software architecture and development practices
+- Founder of [Green Software Meetup Düsseldorf](https://www.meetup.com/de-DE/green-software-meetup-dusseldorf/) (2023)
+- Speaker on Green Software practices at multiple conferences
+- CO2 optimization and energy-efficient system design
+
+**Industry Experience:** 8+ sectors including Insurance, Energy, E-Mobility, Healthcare, Logistics, Audit/Compliance, Loyalty, and Retail.
+
+# Verified Credentials & Certifications
+
+**Professional Training Certifications:**
+- **Trainer:** Kubernetes for Developers (2019) - Official Kubernetes training certification
+- **Trainer:** Docker for Developers (2019) - Container technology training certification
+
+**Employment History:**
+- **codecentric AG** - Senior Solution Architect (2022 - Present)
+- **25+ years** of continuous professional software development experience
 
 # Awards & Recognition
 
@@ -28,9 +47,21 @@ Senior Solution Architect at codecentric AG (since 2022) with 25+ years of exper
 - **2024:** codecentric Community Award - Best Podcast or Vlog
 - **2023:** codecentric Community Award - Corporate Social Responsibility
 
-# Podcasting
+# Content Creation & Media
 
-Since 2022 I'm with the [Softwerker Cast](https://www.codecentric.de/softwerkercast). I'm moderating, planing the content and organize the interviews. Subscribe at [podfollow.com](https://podfollow.com/1592472699/view).
+**Podcast Host:**
+
+Since 2022, I host and produce the [Softwerker Cast](https://www.codecentric.de/softwerkercast), a podcast featuring conversations with technology leaders and innovators in the German tech scene. Responsibilities include:
+- Moderating technical discussions with industry experts
+- Content planning and editorial direction
+- Interview coordination and production
+- 50+ episodes published covering AI, DevOps, Cloud-Native technologies
+
+Subscribe: [podfollow.com/softwerkercast](https://podfollow.com/1592472699/view)
+
+**Recognition:**
+- **2025:** codecentric Community Award - Best Podcast or Vlog
+- **2024:** codecentric Community Award - Best Podcast or Vlog
 
 # Talks & Speaking Engagements
 
@@ -44,10 +75,16 @@ Since 2022 I'm with the [Softwerker Cast](https://www.codecentric.de/softwerkerc
 ## 2023
 - "Green Software in der Praxis" - [Tech & Talk Dortmund Meetup](https://www.meetup.com/de-DE/codecentric-dortmund-tech-talk/events/297443886) (12.12.2023)
 
-# Community
-- 2023 Founder of the [Green Software Meetup Düsseldorf](https://www.meetup.com/de-DE/green-software-meetup-dusseldorf/)
-- 2022: Founder of the [Local IT Lunch](https://www.meetup.com/de-DE/local-it-lunch/) as a lean networking meetup for IT people in Düsseldorf.
-- 2016: Founder of the [Clojure Meetup Düsseldorf](https://www.meetup.com/de-DE/clojure-duesseldorf/) to connect all the clojure fans in Düsseldorf.
+# Community Leadership
+
+**Meetup Organizer & Community Builder:**
+
+- **2023:** Founder of the [Green Software Meetup Düsseldorf](https://www.meetup.com/de-DE/green-software-meetup-dusseldorf/) - Leading sustainable software development community in Düsseldorf region
+- **2022:** Founder of the [Local IT Lunch](https://www.meetup.com/de-DE/local-it-lunch/) - Lean networking meetup for IT professionals in Düsseldorf
+- **2016:** Founder of the [Clojure Meetup Düsseldorf](https://www.meetup.com/de-DE/clojure-duesseldorf/) - Connecting functional programming enthusiasts in the region
+
+**Community Award:**
+- **2023:** codecentric Community Award - Corporate Social Responsibility
 
 # Publications & Thought Leadership
 

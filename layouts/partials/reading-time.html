@@ -1,0 +1,7 @@
+{{- if .WordCount -}}
+  {{- $readingTime := div .WordCount 200 -}}
+  {{- if lt $readingTime 1 -}}
+    {{- $readingTime = 1 -}}
+  {{- end -}}
+  <span class="reading-time">{{ $readingTime }} min read</span>
+{{- end -}}

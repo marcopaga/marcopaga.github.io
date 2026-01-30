@@ -1,0 +1,43 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ .Site.Params.author }}",
+  "jobTitle": "Senior Solution Architect",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "codecentric AG"
+  },
+  "url": "{{ .Site.BaseURL }}",
+  "sameAs": [
+    "https://github.com/marcopaga/",
+    "https://twitter.com/m_p_dus/",
+    "https://www.linkedin.com/in/marco-paga-1925b2b1/"
+  ],
+  "knowsAbout": [
+    "Cloud-Native Architecture",
+    "Kubernetes",
+    "DevOps",
+    "GitOps",
+    "Green IT",
+    "Platform Engineering",
+    "CI/CD",
+    "Tekton",
+    "GitHub Actions",
+    "Flux CD"
+  ],
+  "description": "{{ .Site.Params.description }}",
+  "image": "{{ .Site.BaseURL }}{{ .Site.Params.avatarurl }}",
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "Kubernetes for Developers Trainer"
+    }
+  ],
+  "award": [
+    "codecentric Community Award 2025 - Best Podcast or Vlog",
+    "codecentric Community Award 2024 - Best Podcast or Vlog"
+  ]
+}
+</script>

@@ -1,0 +1,173 @@
+name: SEO Validation
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  validate-seo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.139.4'
+          extended: true
+
+      - name: Build site
+        run: hugo --minify --baseURL="https://marco-paga.eu"
+
+      - name: Verify robots.txt exists
+        run: |
+          if [ ! -f "public/robots.txt" ]; then
+            echo "❌ robots.txt not found in public/ directory"
+            exit 1
+          fi
+          echo "✅ robots.txt exists"
+          echo "Content preview:"
+          head -n 20 public/robots.txt
+
+      - name: Verify llms.txt exists
+        run: |
+          if [ ! -f "public/llms.txt" ]; then
+            echo "❌ llms.txt not found in public/ directory"
+            exit 1
+          fi
+          echo "✅ llms.txt exists"
+          echo "Content preview:"
+          head -n 20 public/llms.txt
+
+      - name: Verify sitemap.xml exists
+        run: |
+          if [ ! -f "public/sitemap.xml" ]; then
+            echo "❌ sitemap.xml not found in public/ directory"
+            exit 1
+          fi
+          echo "✅ sitemap.xml exists"
+          echo "Number of URLs in sitemap:"
+          grep -c "<loc>" public/sitemap.xml || echo "0"
+
+      - name: Check for JSON-LD structured data
+        run: |
+          echo "Checking for JSON-LD structured data in generated HTML..."
+
+          # Check homepage
+          if grep -q 'application/ld+json' public/index.html; then
+            echo "✅ Homepage contains JSON-LD structured data"
+          else
+            echo "❌ Homepage missing JSON-LD structured data"
+            exit 1
+          fi
+
+          # Check for Person schema
+          if grep -q '"@type".*"Person"' public/index.html; then
+            echo "✅ Person schema found"
+          else
+            echo "⚠️  Person schema not found on homepage"
+          fi
+
+          # Check for WebSite schema
+          if grep -q '"@type".*"WebSite"' public/index.html; then
+            echo "✅ WebSite schema found"
+          else
+            echo "⚠️  WebSite schema not found on homepage"
+          fi
+
+      - name: Check blog posts for structured data
+        run: |
+          echo "Checking blog posts for BlogPosting schema..."
+
+          # Find all blog post HTML files
+          blog_posts=$(find public/entries -name "index.html" 2>/dev/null || echo "")
+
+          if [ -z "$blog_posts" ]; then
+            echo "⚠️  No blog posts found in public/entries/"
+            exit 0
+          fi
+
+          for post in $blog_posts; do
+            post_name=$(dirname "$post" | xargs basename)
+            if grep -q '"@type".*"BlogPosting"' "$post"; then
+              echo "✅ $post_name has BlogPosting schema"
+            else
+              echo "❌ $post_name missing BlogPosting schema"
+              exit 1
+            fi
+          done
+
+      - name: Validate meta descriptions
+        run: |
+          echo "Checking for unique meta descriptions..."
+
+          # Check that pages have meta descriptions
+          html_files=$(find public -name "index.html" -not -path "*/tags/*" -not -path "*/topics/*" -not -path "*/categories/*")
+
+          missing_descriptions=0
+          for file in $html_files; do
+            if ! grep -q '<meta name="description"' "$file"; then
+              echo "⚠️  Missing meta description: $file"
+              missing_descriptions=$((missing_descriptions + 1))
+            fi
+          done
+
+          if [ $missing_descriptions -eq 0 ]; then
+            echo "✅ All pages have meta descriptions"
+          else
+            echo "⚠️  $missing_descriptions pages missing meta descriptions (non-fatal)"
+          fi
+
+      - name: Check for AI crawler directives in robots.txt
+        run: |
+          echo "Verifying AI crawler configuration..."
+
+          required_crawlers=("GPTBot" "ClaudeBot" "Google-Extended" "PerplexityBot")
+
+          missing_crawlers=0
+          for crawler in "${required_crawlers[@]}"; do
+            if grep -q "User-agent: $crawler" public/robots.txt; then
+              echo "✅ $crawler configured"
+            else
+              echo "⚠️  $crawler not found in robots.txt"
+              missing_crawlers=$((missing_crawlers + 1))
+            fi
+          done
+
+          if [ $missing_crawlers -eq 0 ]; then
+            echo "✅ All major AI crawlers configured"
+          else
+            echo "⚠️  $missing_crawlers AI crawler configurations missing (non-fatal)"
+          fi
+
+      - name: Verify sitemap URL in robots.txt
+        run: |
+          if grep -q "Sitemap: https://marco-paga.eu/sitemap.xml" public/robots.txt; then
+            echo "✅ Sitemap URL present in robots.txt"
+          else
+            echo "❌ Sitemap URL missing or incorrect in robots.txt"
+            exit 1
+          fi
+
+      - name: SEO validation summary
+        if: success()
+        run: |
+          echo ""
+          echo "========================================="
+          echo "✅ SEO Validation Passed"
+          echo "========================================="
+          echo ""
+          echo "All critical SEO elements validated:"
+          echo "  ✅ robots.txt exists and configured"
+          echo "  ✅ llms.txt exists for AI agents"
+          echo "  ✅ sitemap.xml generated"
+          echo "  ✅ JSON-LD structured data present"
+          echo "  ✅ Hugo build successful"
+          echo ""

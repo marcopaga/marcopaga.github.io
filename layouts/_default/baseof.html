@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    {{- if .IsPage -}}
+      {{- with .Params.description -}}
+        <meta name="description" content="{{ . }}">
+      {{- else -}}
+        <meta name="description" content="{{ .Summary | plainify | truncate 160 }}">
+      {{- end -}}
+    {{- else -}}
+      <meta name="description" content="{{ .Site.Params.description }}">
+    {{- end -}}
+
+    {{- if .IsPage -}}
+      {{- if .Params.keywords -}}
+        <meta name="keywords" content="{{ .Params.keywords }}">
+      {{- else if .Params.tags -}}
+        <meta name="keywords" content="{{ delimit .Params.tags ", " }}">
+      {{- end -}}
+    {{- else -}}
+      {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+    {{- end -}}
+
+    {{- if and .IsPage (eq .Type "entries") -}}
+      <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+      {{- if .Lastmod -}}
+        <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+      {{- end -}}
+      {{- with .Params.author -}}
+        <meta property="article:author" content="{{ . }}">
+      {{- else -}}
+        <meta property="article:author" content="{{ $.Site.Params.author }}">
+      {{- end -}}
+      {{- with .Params.tags -}}
+        {{- range . -}}
+          <meta property="article:tag" content="{{ . }}">
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:title" content="{{ block "og-title" . }}{{ if .IsPage }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}">
+    {{- if .IsPage -}}
+      {{- with .Params.description -}}
+        <meta property="og:description" content="{{ . }}">
+      {{- else -}}
+        <meta property="og:description" content="{{ .Summary | plainify | truncate 160 }}">
+      {{- end -}}
+    {{- else -}}
+      <meta property="og:description" content="{{ .Site.Params.description }}">
+    {{- end -}}
+    <meta property="og:type" content="{{ if and .IsPage (eq .Type "entries") }}article{{ else }}website{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    {{- if and .IsPage .Params.image -}}
+      <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image }}">
+    {{- else if .IsPage -}}
+      <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.thumbnail }}">
+    {{- else -}}
+      <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.thumbnail }}">
+    {{- end -}}
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@m_p_dus">
+    {{- with .Site.Params.author -}}
+      <meta name="twitter:creator" content="@m_p_dus">
+    {{- end -}}
+    <meta name="twitter:title" content="{{ if .IsPage }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
+    {{- if .IsPage -}}
+      {{- with .Params.description -}}
+        <meta name="twitter:description" content="{{ . }}">
+      {{- else -}}
+        <meta name="twitter:description" content="{{ .Summary | plainify | truncate 160 }}">
+      {{- end -}}
+    {{- else -}}
+      <meta name="twitter:description" content="{{ .Site.Params.description }}">
+    {{- end -}}
+    {{- if and .IsPage .Params.image -}}
+      <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.image }}">
+    {{- else -}}
+      <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.thumbnail }}">
+    {{- end -}}
+
+    <base href="{{ .Permalink }}">
+    <title>{{ block "title" . }}{{ if .IsPage }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</title>
+
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <link rel="stylesheet" href="{{ "css/normalize.min.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/style.min.css" | relURL }}">
+
+    {{ if .Site.Params.rtl}}
+      <link rel="stylesheet" href="{{ "css/style-rtl.min.css" | relURL }}">
+    {{ end }}
+
+    {{ range .Site.Params.custom_css }}
+      <link rel="stylesheet" href="{{ . | absURL }}">
+    {{ end }}
+
+    <link rel="icon" type="image/png" href="{{ "images/favicon-32x32.png" | relURL }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ "images/favicon-16x16.png" | relURL }}" sizes="16x16">
+
+    {{ with .Site.Home.AlternativeOutputFormats.Get "RSS" }}
+      <link rel="alternate" href="{{ .Permalink }}" type="application/rss+xml" title="{{ $.Site.Title | plainify }}">
+      <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title | plainify }}" />
+    {{ end }}
+
+    {{- /* JSON-LD Structured Data */ -}}
+    {{ if .IsHome }}
+      {{ partial "schema-website.html" . }}
+    {{ end }}
+    {{ partial "schema-person.html" . }}
+    {{ partial "schema-blogposting.html" . }}
+    {{ partial "schema-breadcrumb.html" . }}
+
+    {{ hugo.Generator }}
+  </head>
+
+  <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
+    <main class="wrapper">
+      {{ partial "header.html" . }}
+
+      <div class="content">
+        {{ block "content" . }}{{ end }}
+      </div>
+      {{ if or (.Site.Params.fixedbarContent) (.Site.Params.snsShare)}}
+        {{ partial "footer.html" . }}
+      {{ end }}
+    </main>
+
+    {{ template "_internal/google_analytics.html" . }}
+
+  <script src="{{ "js/app.js" | relURL }}"></script>
+  {{ with .Site.Params.fixedbarContentAfter }}
+  <script>
+  (function($) {
+    $(function() {
+      $('#privateTrigger').on('click', function() {
+        $('.private').slideToggle();
+        $('#privateTriggerText').text("{{ . }}");
+      });
+    });
+   })(jQuery);
+  </script>
+  {{ end }}
+  </body>
+</html>
