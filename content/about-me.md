@@ -21,14 +21,12 @@ Senior Solution Architect at codecentric AG (since 2022) with 25+ years of exper
 
 - **Trainer:** Kubernetes for Developers (2019)
 - **Trainer:** Docker for Developers (2019)
-- **Certified:** IT Specialist in Application Development (IHK, 2008)
 
 # Awards & Recognition
 
 - **2025:** codecentric Community Award - Best Podcast or Vlog
 - **2024:** codecentric Community Award - Best Podcast or Vlog
 - **2023:** codecentric Community Award - Corporate Social Responsibility
-- **2006:** JOY2006 Innovation Award Winner (METRO Group)
 
 # Podcasting
 
