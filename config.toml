@@ -16,6 +16,11 @@ pygmentsUseClasses = true
 
 #disqusShortname = "yourdiscussshortname"
 
+[taxonomies]
+    tag = "tags"
+    topic = "topics"
+    category = "categories"
+
 [params]
     author = "Marco Paga"
     description = "Marco Paga - Senior Solution Architect specializing in Cloud-Native Architecture, DevOps, and Green IT"
@@ -28,6 +33,18 @@ pygmentsUseClasses = true
 
     hideCredits = false
     hideCopyright = true
+
+    # Author and organization information
+    jobTitle = "Senior Solution Architect"
+    company = "codecentric AG"
+    twitterHandle = "@m_p_dus"
+    linkedInProfile = "https://www.linkedin.com/in/marco-paga-1925b2b1/"
+    githubProfile = "https://github.com/marcopaga/"
+
+    # Content display options
+    showLastModified = true
+    showReadingTime = true
+    showAuthorInfo = true
 
     # Bottom sns share
     snsShare = true
@@ -42,7 +59,7 @@ pygmentsUseClasses = true
     thumbnail = "images/tn.png"
 
     # Custom CSS
-    custom_css = []
+    custom_css = ["css/custom-aeo.css"]
 
     # Alignment of Mobile Menu items
     itemscentered = true

@@ -1,6 +1,14 @@
 ---
 title: "Tekton Triggers CEL"
 date: 2022-02-27T14:49:03+01:00
+lastmod: 2022-02-27T14:49:03+01:00
+description: "Master Tekton Triggers with Common Expression Language (CEL) for advanced webhook processing. Learn how to use CEL interceptors to manipulate git references and automate pipeline triggers in Kubernetes."
+summary: "Use CEL interceptors in Tekton Triggers to transform git references and automate webhook-based pipeline execution."
+tags: ["Tekton", "CEL", "Kubernetes", "CI/CD", "Webhooks", "GitLab", "GitHub", "Automation"]
+topics: ["Tekton", "CI/CD", "Kubernetes", "Automation"]
+category: "DevOps & Infrastructure"
+author: "Marco Paga"
+keywords: "Tekton Triggers, CEL, Common Expression Language, Kubernetes, webhooks, git automation, interceptors, pipeline automation"
 ---
 _or how to convert a git ref to a branch name_
 

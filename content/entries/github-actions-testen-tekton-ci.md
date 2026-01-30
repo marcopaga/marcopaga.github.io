@@ -1,6 +1,14 @@
 ---
 title: "Github Actions test a full Tekton CI installation"
 date: 2022-02-15T00:00:00+01:00
+lastmod: 2022-02-15T00:00:00+01:00
+description: "Learn how to test Tekton CI/CD pipelines using GitHub Actions. This guide covers setting up a tested CI system with K3d, Flux, and GitHub Actions for cloud-native continuous integration."
+summary: "Build a fully tested Tekton CI installation using GitHub Actions, K3d, and Flux for reliable cloud-native CI/CD pipelines."
+tags: ["Tekton", "GitHub Actions", "CI/CD", "Kubernetes", "K3d", "Flux", "Testing", "DevOps"]
+topics: ["CI/CD", "Kubernetes", "Tekton", "Testing", "DevOps"]
+category: "DevOps & Infrastructure"
+author: "Marco Paga"
+keywords: "Tekton, GitHub Actions, CI/CD testing, Kubernetes, K3d, Flux, cloud-native CI, pipeline testing, DevOps automation"
 ---
 
 {{<tableOfContents>}}
