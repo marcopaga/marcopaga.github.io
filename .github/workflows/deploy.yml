@@ -1,0 +1,50 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          submodules: true  # Fetch Hugo themes
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.152.2'
+          extended: true
+
+      - name: Build
+        run: hugo --minify --baseURL="https://marco-paga.eu"
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+
+  sitespeed:
+    runs-on: ubuntu-latest
+    name: Run sitespeed.io performance monitoring
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run sitespeed.io container
+        run: |
+          docker run -v "$(pwd):/sitespeed.io" \
+            sitespeedio/sitespeed.io:30.8.0 \
+            .github/sitespeed-urls.txt \
+            --budget.configPath .github/sitespeed-budget.json \
+            -n 1 \
+            --sustainable.enable
