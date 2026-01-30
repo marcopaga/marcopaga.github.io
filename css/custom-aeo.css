@@ -1,0 +1,52 @@
+/* Custom styles for AI Engine Optimization elements */
+
+/* Post metadata styling */
+.post-metadata {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.post-metadata time {
+  font-style: italic;
+}
+
+.reading-time {
+  color: #888;
+}
+
+/* Post tags styling */
+.post-tags {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post-tags .tag {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.post-tags .tag:hover {
+  background-color: #e0e0e0;
+}
+
+/* Post footer styling */
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.post-footer p {
+  margin: 0;
+}

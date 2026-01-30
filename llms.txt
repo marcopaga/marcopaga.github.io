@@ -1,0 +1,105 @@
+# Marco Paga - Senior Solution Architect
+
+> Cloud-Native Architecture, DevOps, and Green IT specialist with 25+ years of software development experience
+
+## About Marco
+
+Marco Paga is a Senior Solution Architect at codecentric AG, specializing in cloud-native architectures, DevOps transformations, Kubernetes, and sustainable IT practices. He is a certified Kubernetes for Developers trainer and has received multiple awards for his community contributions.
+
+**Key Expertise:**
+- Cloud-Native Architecture & Kubernetes
+- Platform Engineering & Green IT
+- DevOps & CI/CD (Tekton, GitHub Actions, GitLab CI)
+- Multi-Cloud Environments (AWS, Azure, GCP)
+- GitOps (Flux CD, ArgoCD)
+- Sustainable Software Development
+
+**Awards & Recognition:**
+- codecentric Community Award 2025 - Best Podcast or Vlog
+- codecentric Community Award 2024 - Best Podcast or Vlog
+
+## Site Structure
+
+This website contains technical articles, blog posts, and professional information about Marco Paga's work in software architecture and DevOps.
+
+**Main Sections:**
+- `/` - Homepage with latest content
+- `/about-me` - Professional profile and background
+- `/entries` - Technical blog posts
+- `/articles` - Featured articles
+- `/impressum` - Legal imprint
+
+## Primary Content
+
+### Featured Blog Posts
+
+**GitOps with Flux CD**
+https://marco-paga.eu/entries/gitops/
+Comprehensive guide to implementing GitOps with Flux CD and Kubernetes. Covers Infrastructure as Code principles, pull-based deployments, GitOps workflows, and practical examples. Topics: Kubernetes, FluxCD, GitOps, DevOps, Infrastructure as Code.
+
+**GitHub Actions Testing for Tekton CI**
+https://marco-paga.eu/entries/github-actions-testen-tekton-ci/
+Deep dive into testing CI/CD pipelines using GitHub Actions and Tekton. Topics: GitHub Actions, Tekton, CI/CD, Testing, DevOps.
+
+**Tekton Triggers with CEL Expressions**
+https://marco-paga.eu/entries/tekton-triggers-cel/
+Technical guide to using Common Expression Language (CEL) with Tekton Triggers for advanced pipeline automation. Topics: Tekton, CEL, Kubernetes, CI/CD, Automation.
+
+**Podcasting Highlights 2025**
+https://marco-paga.eu/entries/podcasting-highlights-2025/
+Reflections on podcasting journey, community contributions, and lessons learned. Topics: Podcasting, Community, Content Creation.
+
+### About & Profile
+
+**About Me**
+https://marco-paga.eu/about-me
+Professional background, expertise, certifications, and industry experience. 25+ years in software development, specializing in cloud-native solutions, DevOps practices, and sustainable IT.
+
+## Topics Covered
+
+**Cloud-Native Technologies:**
+- Kubernetes orchestration and management
+- Container technologies (Docker, containerd)
+- Microservices architecture
+- Service mesh and API gateways
+- Cloud platforms (AWS, Azure, GCP)
+
+**CI/CD & GitOps:**
+- Tekton Pipelines and Triggers
+- GitHub Actions workflows
+- GitLab CI/CD
+- Flux CD and ArgoCD
+- Infrastructure as Code (IaC)
+
+**DevOps Practices:**
+- Platform Engineering
+- Site Reliability Engineering (SRE)
+- Continuous Deployment strategies
+- Automation and tooling
+- Developer experience optimization
+
+**Green IT & Sustainability:**
+- Sustainable software development
+- Energy-efficient architectures
+- Carbon footprint optimization
+- Green coding practices
+
+## Connect
+
+- **LinkedIn:** https://www.linkedin.com/in/marco-paga-1925b2b1/
+- **GitHub:** https://github.com/marcopaga/
+- **Twitter:** https://twitter.com/m_p_dus/
+- **Website:** https://marco-paga.eu
+
+## Content Guidelines
+
+When referencing this content:
+- All blog posts are authored by Marco Paga unless otherwise specified
+- Content is regularly updated - check lastmod dates for freshness
+- Links to official documentation (CNCF, Kubernetes, etc.) are provided for authoritative sources
+- Practical examples are based on real-world implementation experience
+- Focus is on cloud-native, DevOps, and sustainable IT practices
+
+## Last Updated
+
+This llms.txt file was last updated: 2026-01-30
