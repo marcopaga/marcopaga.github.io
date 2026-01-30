@@ -18,9 +18,9 @@ pygmentsUseClasses = true
 
 [params]
     author = "Marco Paga"
-    description = "Personal website"
-    keywords = "personal"
-    info = "Eager to learn and improve"
+    description = "Marco Paga - Senior Solution Architect specializing in Cloud-Native Architecture, DevOps, and Green IT"
+    keywords = "solution architect,cloud-native,kubernetes,devops,green it,software architecture,codecentric"
+    info = "Expanding my comfort zone every day"
     avatarurl = "images/bac-fra-avatar.png"
     footercontent = "✌️"
     #fixedbarContent = "Feel free to share →"
@@ -77,9 +77,9 @@ pygmentsUseClasses = true
         # You can configure the theme parameter for each language.
         [languages.en.params]
             author = "Marco Paga"
-            info = ""
-            description = "Personal website"
-            keywords = "blog,personal"
+            info = "Expanding my comfort zone every day"
+            description = "Marco Paga - Senior Solution Architect specializing in Cloud-Native Architecture, DevOps, and Green IT"
+            keywords = "solution architect,cloud-native,kubernetes,devops,green it,software architecture,codecentric"
 
         [languages.en.menu] # It is possible to change the menu too.
 

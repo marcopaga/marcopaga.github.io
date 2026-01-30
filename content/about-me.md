@@ -3,37 +3,95 @@ title: "About Me"
 date: 2022-08-01T00:00:00+01:00
 ---
 
+# Professional Summary
+
+Senior Solution Architect at codecentric AG (since 2022) with 25+ years of experience in software development, specializing in cloud-native architectures, DevOps transformations, and sustainable IT.
+
+**Professional motto:** *"Expanding my comfort zone every day"*
+
+**Core expertise:**
+- Software Architecture & Cloud-Native Solutions
+- Platform Engineering & Green IT
+- DevOps & CI/CD Pipeline Design
+- Multi-Cloud Environments (AWS, Azure, GCP)
+
+**Industry experience across 8 sectors:** Insurance, Energy, E-Mobility, Healthcare, Logistics, Audit/Compliance, Loyalty, and Retail.
+
+# Training & Certifications
+
+- **Trainer:** Kubernetes for Developers (2019)
+- **Trainer:** Docker for Developers (2019)
+- **Certified:** IT Specialist in Application Development (IHK, 2008)
+
+# Awards & Recognition
+
+- **2025:** codecentric Community Award - Best Podcast or Vlog
+- **2024:** codecentric Community Award - Best Podcast or Vlog
+- **2023:** codecentric Community Award - Corporate Social Responsibility
+- **2006:** JOY2006 Innovation Award Winner (METRO Group)
+
 # Podcasting
 
 Since 2022 I'm with the [Softwerker Cast](https://www.codecentric.de/softwerkercast). I'm moderating, planing the content and organize the interviews. Subscribe at [podfollow.com](https://podfollow.com/1592472699/view).
 
-# Talks
-- ["Nachhaltigkeit Ganzheitlich gedacht" im Rahmen der DiWoDo 2025](https://www.meetup.com/de-DE/codecentric-dortmund-tech-talk/events/310422685/)
-- "Green Software in der Praxis 11.01.2024" - [Tech & Talk Solingen Meetup](https://cclnk.de/48zxE6m)
-- "Green Software in der Praxis 29.02.2024" - [Developer Group Moers Meetup](https://www.meetup.com/developer-group-moers/events/298438138/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=linkedin)
+# Talks & Speaking Engagements
 
-- "Green Software in der Praxis 12.12.2023" - [Tech & Talk Dortmund Meetup](https://www.meetup.com/de-DE/codecentric-dortmund-tech-talk/events/297443886)
+## 2025
+- ["Nachhaltigkeit Ganzheitlich gedacht" - DiWoDo 2025](https://www.meetup.com/de-DE/codecentric-dortmund-tech-talk/events/310422685/)
+
+## 2024
+- "Green Software in der Praxis" - [Tech & Talk Solingen Meetup](https://cclnk.de/48zxE6m) (11.01.2024)
+- "Green Software in der Praxis" - [Developer Group Moers Meetup](https://www.meetup.com/developer-group-moers/events/298438138/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=linkedin) (29.02.2024)
+
+## 2023
+- "Green Software in der Praxis" - [Tech & Talk Dortmund Meetup](https://www.meetup.com/de-DE/codecentric-dortmund-tech-talk/events/297443886) (12.12.2023)
 
 # Community
 - 2023 Founder of the [Green Software Meetup Düsseldorf](https://www.meetup.com/de-DE/green-software-meetup-dusseldorf/)
 - 2022: Founder of the [Local IT Lunch](https://www.meetup.com/de-DE/local-it-lunch/) as a lean networking meetup for IT people in Düsseldorf.
 - 2016: Founder of the [Clojure Meetup Düsseldorf](https://www.meetup.com/de-DE/clojure-duesseldorf/) to connect all the clojure fans in Düsseldorf.
 
+# Publications & Thought Leadership
+
+## Cloud-Native & DevOps (2022)
+
+**Tekton CI/CD Series** - Cloud-native pipelines with Kubernetes
+- [GitHub Actions test a full Tekton CI installation](https://blog.codecentric.de/en/2022/04/github-actions-test-a-full-tekton-ci-installation/)
+- [Tekton Triggers in der Praxis](https://blog.codecentric.de/2022/03/tekton-triggers-in-der-praxis/)
+- [Tekton Buildpack Pipeline](https://blog.codecentric.de/2022/02/alles-schon-da-tekton-buildpack-pipeline/)
+- [Tekton Cloud-native CI/CD - a pragmatic intro](https://blog.codecentric.de/en/2022/01/tekton-cloud-native-ci-cd-pragmatic-intro/)
+
+**Security & Policy**
+- [Open Policy Agent – Maschinen, die auf Regeln starren](https://blog.codecentric.de/open-policy-agent-intro) - Rules-based authorization systems
+- [Open Policy Agent – Primer](https://blog.codecentric.de/open-policy-agent-primer-and-sample)
+
+**Platform Publications**
+- [Softwerker Vol. 20](https://info.codecentric.de/softwerker-vol-20) (2022)
+- [Softwerker Vol. 19](https://info.codecentric.de/softwerker-vol-19) (2022)
+
+## Infrastructure (2017-2019)
+- [Traefik – The modern reverse proxy](https://blog.codecentric.de/en/2017/09/traefik-modern-reverse-proxy/) (2017)
+- [Let's encrypt wildcard TLS certificates on Azure Kubernetes Service](https://gist.github.com/marcopaga/1b6d045d85099cbf32456443a6e3cdf7) (2019)
+
+## Enterprise Java & RFID (2007)
+- [JavaMagazin 03/2007: "Eine Einführung in RFID"](http://javamagazin.de/itr/ausgaben/psecom,id,342,nodeid,20.html)
+
 # Skills proven in professional projects
 
 | Topic | Item |
 |-------|------|
-| Focus | Platform Engineering, Green IT |
-| Workshops | Requirements Workshopss, Technical Workshops, Architecture Reviews, Assessments |
-| CI/CD | Gitlab Pipelines, Github Actions, Azure DevOps, Tekton, Jenkins |
-| Platforms | Containers, Kubernetes, AWS, Azure, Google Cloud, on-prem Solutions |
-| Server | Tomcat, Jetty, Nginx, Traefik, Apache |
-| Modelling | UML, BPMN, OpenAPI and more Tool-specific Notations |
-| Languages | Java/Kotlin Spring Ecosystem, TypeScript with NestJS, Angular and React, Python, HTML |
-| Persistence | Oracle SQL with PL/SQL, DynamoDB, Streaming Architectures with e.g. Redis and Kafka |
-| Tooling | AWS CDK, Ansible, Terraform, Vault, Helm, Keda, maven, gradle, npm |
-| GitOps | Flux2, ArgoCD in einer Pipeline mit Gitlab and Tekton |
-| Observability | ELK Stack, Grafana, Datadog, Instana |
+| **Current Focus** | Platform Engineering, Green IT, Cloud-Native Architecture |
+| **Specializations** | Kubernetes (Certified Trainer), GitOps (Flux2, ArgoCD), Multi-Cloud (AWS, Azure, GCP), CI/CD (Tekton, GitHub Actions, GitLab) |
+| **Workshops** | Requirements Workshops, Technical Workshops, Architecture Reviews, Assessments |
+| **CI/CD** | Gitlab Pipelines, Github Actions, Azure DevOps, Tekton, Jenkins |
+| **Platforms** | Containers, Kubernetes, AWS, Azure, Google Cloud, on-prem Solutions |
+| **Server** | Tomcat, Jetty, Nginx, Traefik, Apache |
+| **Modelling** | UML, BPMN, OpenAPI and more Tool-specific Notations |
+| **Languages** | Java/Kotlin Spring Ecosystem, TypeScript with NestJS, Angular and React, Python, HTML |
+| **Persistence** | Oracle SQL with PL/SQL, DynamoDB, Streaming Architectures with e.g. Redis and Kafka |
+| **Tooling** | AWS CDK, Ansible, Terraform, Vault, Helm, Keda, maven, gradle, npm |
+| **GitOps** | Flux2, ArgoCD in a Pipeline with Gitlab and Tekton |
+| **Observability** | ELK Stack, Grafana, Datadog, Instana |
 
 # LinkedIn
 
