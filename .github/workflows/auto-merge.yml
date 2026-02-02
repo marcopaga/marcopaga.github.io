@@ -18,7 +18,7 @@ jobs:
        contains(github.event.pull_request.labels.*.name, 'automerge'))
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Check for major updates
         id: check
